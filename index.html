@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>炸考卷紓壓遊戲</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <h1>炸考卷紓壓遊戲</h1>
+  <div class="game-container">
+
+    <div class="input-name">
+      <input type="text" id="player-name" placeholder="輸入你的名字" />
+      <button id="start-btn">開始炸！</button>
+    </div>
+
+    <div class="game" style="display:none;">
+      <p id="reaction-time"></p>
+      <button id="bomb-btn">💣 炸考卷！</button>
+      <div id="explosion-area"></div>
+      <p id="random-message"></p>
+      <button id="restart-btn">重置遊戲</button>
+      <button id="back-btn">回到輸入名字</button>
+    </div>
+
+    <div class="leaderboard">
+      <h3>排行榜</h3>
+      <ul id="leaderboard-list"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
